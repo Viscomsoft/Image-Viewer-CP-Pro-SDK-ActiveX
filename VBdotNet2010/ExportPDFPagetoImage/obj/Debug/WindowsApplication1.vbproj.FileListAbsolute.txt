@@ -1,0 +1,19 @@
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\Interop.SCRIBBLELib.dll
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\AxInterop.SCRIBBLELib.dll
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\bin\WindowsApplication1.exe
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\bin\WindowsApplication1.pdb
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\bin\WindowsApplication1.xml
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\bin\Interop.SCRIBBLELib.dll
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\bin\AxInterop.SCRIBBLELib.dll
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.Form1.resources
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.exe
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.xml
+C:\Program Files (x86)\Image Viewer CP Pro ActiveX ControlX15nopluginX333333333\Examples\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.pdb
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\Interop.SCRIBBLELib.dll
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\AxInterop.SCRIBBLELib.dll
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.exe
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.xml
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2010\ExportPDFPagetoImage\obj\Debug\WindowsApplication1.pdb
