@@ -1,0 +1,6 @@
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\bin\ImageViewerCPSample.exe.config
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\obj\Debug\Interop.SCRIBBLELib.dll
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\obj\Debug\AxInterop.SCRIBBLELib.dll
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\obj\Debug\ImageViewerCPSample.vbproj.ResolveComReference.cache
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\obj\Debug\ImageViewerCPSample.Form1.resources
+C:\installer\imageviewercppro\Examples4.0\VBdotNet2019\General\obj\Debug\ImageViewerCPSample.vbproj.GenerateResource.Cache
