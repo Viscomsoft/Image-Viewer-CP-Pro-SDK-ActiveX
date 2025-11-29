@@ -72,6 +72,10 @@ namespace WindowsApplication1
             this.radioButton0 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.cboexporttype = new System.Windows.Forms.ComboBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.txtfilename = new System.Windows.Forms.TextBox();
             this.chksavemultipage = new System.Windows.Forms.CheckBox();
             this.goButton = new System.Windows.Forms.Button();
             this.totalPageLabel = new System.Windows.Forms.Label();
@@ -134,6 +138,24 @@ namespace WindowsApplication1
             this.cbopixelformat = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.chkuseadvpdf = new System.Windows.Forms.CheckBox();
+            this.radioChangePage3 = new System.Windows.Forms.RadioButton();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.radioChangePage2 = new System.Windows.Forms.RadioButton();
+            this.radioChangePage1 = new System.Windows.Forms.RadioButton();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lbldeskewangle = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.cboencryptmode = new System.Windows.Forms.ComboBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.btnSavePDFKeepQualityPermission = new System.Windows.Forms.Button();
+            this.txtsavepassword = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.btnSavePDFKeepQualityPassword = new System.Windows.Forms.Button();
+            this.chkfastwebview = new System.Windows.Forms.CheckBox();
+            this.btnSavePDFKeepQuality = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -147,13 +169,15 @@ namespace WindowsApplication1
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axImageViewer1)).BeginInit();
+            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // changeButton
             // 
-            this.changeButton.Location = new System.Drawing.Point(15, 32);
+            this.changeButton.Location = new System.Drawing.Point(15, 35);
             this.changeButton.Name = "changeButton";
-            this.changeButton.Size = new System.Drawing.Size(104, 21);
+            this.changeButton.Size = new System.Drawing.Size(104, 23);
             this.changeButton.TabIndex = 2;
             this.changeButton.Text = "Open";
             this.changeButton.UseVisualStyleBackColor = true;
@@ -161,9 +185,9 @@ namespace WindowsApplication1
             // 
             // rotateButton
             // 
-            this.rotateButton.Location = new System.Drawing.Point(12, 59);
+            this.rotateButton.Location = new System.Drawing.Point(8, 150);
             this.rotateButton.Name = "rotateButton";
-            this.rotateButton.Size = new System.Drawing.Size(104, 21);
+            this.rotateButton.Size = new System.Drawing.Size(104, 23);
             this.rotateButton.TabIndex = 3;
             this.rotateButton.Text = "Rotate";
             this.rotateButton.UseVisualStyleBackColor = true;
@@ -171,9 +195,9 @@ namespace WindowsApplication1
             // 
             // button25
             // 
-            this.button25.Location = new System.Drawing.Point(12, 86);
+            this.button25.Location = new System.Drawing.Point(8, 179);
             this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(104, 21);
+            this.button25.Size = new System.Drawing.Size(104, 23);
             this.button25.TabIndex = 4;
             this.button25.Text = " 25% of Original";
             this.button25.UseVisualStyleBackColor = true;
@@ -181,9 +205,9 @@ namespace WindowsApplication1
             // 
             // button33
             // 
-            this.button33.Location = new System.Drawing.Point(12, 113);
+            this.button33.Location = new System.Drawing.Point(9, 213);
             this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(104, 21);
+            this.button33.Size = new System.Drawing.Size(104, 23);
             this.button33.TabIndex = 5;
             this.button33.Text = " 33% of Original";
             this.button33.UseVisualStyleBackColor = true;
@@ -191,9 +215,9 @@ namespace WindowsApplication1
             // 
             // button50
             // 
-            this.button50.Location = new System.Drawing.Point(12, 139);
+            this.button50.Location = new System.Drawing.Point(9, 242);
             this.button50.Name = "button50";
-            this.button50.Size = new System.Drawing.Size(104, 21);
+            this.button50.Size = new System.Drawing.Size(104, 23);
             this.button50.TabIndex = 6;
             this.button50.Text = " 50% of Original";
             this.button50.UseVisualStyleBackColor = true;
@@ -201,9 +225,9 @@ namespace WindowsApplication1
             // 
             // button75
             // 
-            this.button75.Location = new System.Drawing.Point(12, 166);
+            this.button75.Location = new System.Drawing.Point(9, 271);
             this.button75.Name = "button75";
-            this.button75.Size = new System.Drawing.Size(104, 21);
+            this.button75.Size = new System.Drawing.Size(104, 23);
             this.button75.TabIndex = 7;
             this.button75.Text = " 75% of Original";
             this.button75.UseVisualStyleBackColor = true;
@@ -211,9 +235,9 @@ namespace WindowsApplication1
             // 
             // button100
             // 
-            this.button100.Location = new System.Drawing.Point(12, 193);
+            this.button100.Location = new System.Drawing.Point(9, 300);
             this.button100.Name = "button100";
-            this.button100.Size = new System.Drawing.Size(104, 21);
+            this.button100.Size = new System.Drawing.Size(104, 23);
             this.button100.TabIndex = 8;
             this.button100.Text = "100% of Original";
             this.button100.UseVisualStyleBackColor = true;
@@ -221,9 +245,9 @@ namespace WindowsApplication1
             // 
             // button150
             // 
-            this.button150.Location = new System.Drawing.Point(12, 220);
+            this.button150.Location = new System.Drawing.Point(9, 329);
             this.button150.Name = "button150";
-            this.button150.Size = new System.Drawing.Size(104, 21);
+            this.button150.Size = new System.Drawing.Size(104, 23);
             this.button150.TabIndex = 9;
             this.button150.Text = "150% of Original";
             this.button150.UseVisualStyleBackColor = true;
@@ -231,9 +255,9 @@ namespace WindowsApplication1
             // 
             // button200
             // 
-            this.button200.Location = new System.Drawing.Point(12, 246);
+            this.button200.Location = new System.Drawing.Point(9, 358);
             this.button200.Name = "button200";
-            this.button200.Size = new System.Drawing.Size(104, 21);
+            this.button200.Size = new System.Drawing.Size(104, 23);
             this.button200.TabIndex = 10;
             this.button200.Text = "200% of Original";
             this.button200.UseVisualStyleBackColor = true;
@@ -241,9 +265,9 @@ namespace WindowsApplication1
             // 
             // fitButton
             // 
-            this.fitButton.Location = new System.Drawing.Point(12, 273);
+            this.fitButton.Location = new System.Drawing.Point(9, 389);
             this.fitButton.Name = "fitButton";
-            this.fitButton.Size = new System.Drawing.Size(104, 36);
+            this.fitButton.Size = new System.Drawing.Size(104, 39);
             this.fitButton.TabIndex = 11;
             this.fitButton.Text = "Fit to Window\r\n(aspect ratio)";
             this.fitButton.UseVisualStyleBackColor = true;
@@ -251,9 +275,9 @@ namespace WindowsApplication1
             // 
             // zoomWidthButton
             // 
-            this.zoomWidthButton.Location = new System.Drawing.Point(12, 315);
+            this.zoomWidthButton.Location = new System.Drawing.Point(9, 434);
             this.zoomWidthButton.Name = "zoomWidthButton";
-            this.zoomWidthButton.Size = new System.Drawing.Size(104, 21);
+            this.zoomWidthButton.Size = new System.Drawing.Size(104, 23);
             this.zoomWidthButton.TabIndex = 12;
             this.zoomWidthButton.Text = "Zoom to Width";
             this.zoomWidthButton.UseVisualStyleBackColor = true;
@@ -261,9 +285,9 @@ namespace WindowsApplication1
             // 
             // zoomHeightButton
             // 
-            this.zoomHeightButton.Location = new System.Drawing.Point(12, 342);
+            this.zoomHeightButton.Location = new System.Drawing.Point(9, 464);
             this.zoomHeightButton.Name = "zoomHeightButton";
-            this.zoomHeightButton.Size = new System.Drawing.Size(104, 21);
+            this.zoomHeightButton.Size = new System.Drawing.Size(104, 23);
             this.zoomHeightButton.TabIndex = 13;
             this.zoomHeightButton.Text = "Zoom to Height";
             this.zoomHeightButton.UseVisualStyleBackColor = true;
@@ -271,9 +295,9 @@ namespace WindowsApplication1
             // 
             // zoomInButton
             // 
-            this.zoomInButton.Location = new System.Drawing.Point(12, 368);
+            this.zoomInButton.Location = new System.Drawing.Point(9, 492);
             this.zoomInButton.Name = "zoomInButton";
-            this.zoomInButton.Size = new System.Drawing.Size(104, 21);
+            this.zoomInButton.Size = new System.Drawing.Size(104, 23);
             this.zoomInButton.TabIndex = 14;
             this.zoomInButton.Text = "Zoom In";
             this.zoomInButton.UseVisualStyleBackColor = true;
@@ -281,9 +305,9 @@ namespace WindowsApplication1
             // 
             // zoomOutButton
             // 
-            this.zoomOutButton.Location = new System.Drawing.Point(12, 395);
+            this.zoomOutButton.Location = new System.Drawing.Point(9, 521);
             this.zoomOutButton.Name = "zoomOutButton";
-            this.zoomOutButton.Size = new System.Drawing.Size(104, 21);
+            this.zoomOutButton.Size = new System.Drawing.Size(104, 23);
             this.zoomOutButton.TabIndex = 15;
             this.zoomOutButton.Text = "Zoom Out";
             this.zoomOutButton.UseVisualStyleBackColor = true;
@@ -291,9 +315,9 @@ namespace WindowsApplication1
             // 
             // prevButton
             // 
-            this.prevButton.Location = new System.Drawing.Point(36, 56);
+            this.prevButton.Location = new System.Drawing.Point(36, 61);
             this.prevButton.Name = "prevButton";
-            this.prevButton.Size = new System.Drawing.Size(32, 21);
+            this.prevButton.Size = new System.Drawing.Size(32, 23);
             this.prevButton.TabIndex = 19;
             this.prevButton.Text = "<-";
             this.prevButton.UseVisualStyleBackColor = true;
@@ -301,9 +325,9 @@ namespace WindowsApplication1
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(66, 56);
+            this.nextButton.Location = new System.Drawing.Point(66, 61);
             this.nextButton.Name = "nextButton";
-            this.nextButton.Size = new System.Drawing.Size(32, 21);
+            this.nextButton.Size = new System.Drawing.Size(32, 23);
             this.nextButton.TabIndex = 20;
             this.nextButton.Text = "->";
             this.nextButton.UseVisualStyleBackColor = true;
@@ -313,9 +337,9 @@ namespace WindowsApplication1
             // 
             this.groupBox1.Controls.Add(this.borderOffRadioButton);
             this.groupBox1.Controls.Add(this.borderOnRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(12, 426);
+            this.groupBox1.Location = new System.Drawing.Point(126, 562);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(104, 43);
+            this.groupBox1.Size = new System.Drawing.Size(104, 47);
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Border";
@@ -323,9 +347,9 @@ namespace WindowsApplication1
             // borderOffRadioButton
             // 
             this.borderOffRadioButton.AutoSize = true;
-            this.borderOffRadioButton.Location = new System.Drawing.Point(54, 18);
+            this.borderOffRadioButton.Location = new System.Drawing.Point(54, 20);
             this.borderOffRadioButton.Name = "borderOffRadioButton";
-            this.borderOffRadioButton.Size = new System.Drawing.Size(41, 16);
+            this.borderOffRadioButton.Size = new System.Drawing.Size(45, 17);
             this.borderOffRadioButton.TabIndex = 1;
             this.borderOffRadioButton.Text = "OFF";
             this.borderOffRadioButton.UseVisualStyleBackColor = true;
@@ -335,9 +359,9 @@ namespace WindowsApplication1
             // 
             this.borderOnRadioButton.AutoSize = true;
             this.borderOnRadioButton.Checked = true;
-            this.borderOnRadioButton.Location = new System.Drawing.Point(7, 18);
+            this.borderOnRadioButton.Location = new System.Drawing.Point(7, 20);
             this.borderOnRadioButton.Name = "borderOnRadioButton";
-            this.borderOnRadioButton.Size = new System.Drawing.Size(35, 16);
+            this.borderOnRadioButton.Size = new System.Drawing.Size(41, 17);
             this.borderOnRadioButton.TabIndex = 0;
             this.borderOnRadioButton.TabStop = true;
             this.borderOnRadioButton.Text = "ON";
@@ -348,9 +372,9 @@ namespace WindowsApplication1
             // 
             this.groupBox2.Controls.Add(this.highQOffRadioButton);
             this.groupBox2.Controls.Add(this.highQOnRadioButton);
-            this.groupBox2.Location = new System.Drawing.Point(12, 474);
+            this.groupBox2.Location = new System.Drawing.Point(12, 556);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(104, 43);
+            this.groupBox2.Size = new System.Drawing.Size(104, 47);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "High Quality";
@@ -358,9 +382,9 @@ namespace WindowsApplication1
             // highQOffRadioButton
             // 
             this.highQOffRadioButton.AutoSize = true;
-            this.highQOffRadioButton.Location = new System.Drawing.Point(54, 18);
+            this.highQOffRadioButton.Location = new System.Drawing.Point(54, 20);
             this.highQOffRadioButton.Name = "highQOffRadioButton";
-            this.highQOffRadioButton.Size = new System.Drawing.Size(41, 16);
+            this.highQOffRadioButton.Size = new System.Drawing.Size(45, 17);
             this.highQOffRadioButton.TabIndex = 1;
             this.highQOffRadioButton.Text = "OFF";
             this.highQOffRadioButton.UseVisualStyleBackColor = true;
@@ -370,9 +394,9 @@ namespace WindowsApplication1
             // 
             this.highQOnRadioButton.AutoSize = true;
             this.highQOnRadioButton.Checked = true;
-            this.highQOnRadioButton.Location = new System.Drawing.Point(7, 18);
+            this.highQOnRadioButton.Location = new System.Drawing.Point(7, 20);
             this.highQOnRadioButton.Name = "highQOnRadioButton";
-            this.highQOnRadioButton.Size = new System.Drawing.Size(35, 16);
+            this.highQOnRadioButton.Size = new System.Drawing.Size(41, 17);
             this.highQOnRadioButton.TabIndex = 0;
             this.highQOnRadioButton.TabStop = true;
             this.highQOnRadioButton.Text = "ON";
@@ -381,9 +405,10 @@ namespace WindowsApplication1
             // 
             // savePosButton
             // 
-            this.savePosButton.Location = new System.Drawing.Point(12, 526);
+            this.savePosButton.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.savePosButton.Location = new System.Drawing.Point(763, 662);
             this.savePosButton.Name = "savePosButton";
-            this.savePosButton.Size = new System.Drawing.Size(90, 21);
+            this.savePosButton.Size = new System.Drawing.Size(72, 23);
             this.savePosButton.TabIndex = 23;
             this.savePosButton.Text = "Save Position";
             this.savePosButton.UseVisualStyleBackColor = true;
@@ -391,9 +416,10 @@ namespace WindowsApplication1
             // 
             // restorePosButton
             // 
-            this.restorePosButton.Location = new System.Drawing.Point(108, 526);
+            this.restorePosButton.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restorePosButton.Location = new System.Drawing.Point(836, 662);
             this.restorePosButton.Name = "restorePosButton";
-            this.restorePosButton.Size = new System.Drawing.Size(95, 21);
+            this.restorePosButton.Size = new System.Drawing.Size(82, 23);
             this.restorePosButton.TabIndex = 24;
             this.restorePosButton.Text = "Restore Position";
             this.restorePosButton.UseVisualStyleBackColor = true;
@@ -401,18 +427,19 @@ namespace WindowsApplication1
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 550);
+            this.label1.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(654, 689);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 45);
+            this.label1.Size = new System.Drawing.Size(327, 49);
             this.label1.TabIndex = 25;
             this.label1.Text = "When the image is larger than display area  ,you can save the scroll position and" +
                 " restore the position.";
             // 
             // selRectPosLabel
             // 
-            this.selRectPosLabel.Location = new System.Drawing.Point(122, 405);
+            this.selRectPosLabel.Location = new System.Drawing.Point(122, 439);
             this.selRectPosLabel.Name = "selRectPosLabel";
-            this.selRectPosLabel.Size = new System.Drawing.Size(153, 54);
+            this.selRectPosLabel.Size = new System.Drawing.Size(153, 59);
             this.selRectPosLabel.TabIndex = 26;
             this.selRectPosLabel.Text = "Selection Rectangle Position";
             // 
@@ -423,18 +450,18 @@ namespace WindowsApplication1
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.borderColorButton);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(125, 462);
+            this.groupBox3.Location = new System.Drawing.Point(125, 501);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(150, 55);
+            this.groupBox3.Size = new System.Drawing.Size(150, 60);
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Photo border";
             // 
             // borderWidthButton
             // 
-            this.borderWidthButton.Location = new System.Drawing.Point(99, 30);
+            this.borderWidthButton.Location = new System.Drawing.Point(99, 33);
             this.borderWidthButton.Name = "borderWidthButton";
-            this.borderWidthButton.Size = new System.Drawing.Size(45, 21);
+            this.borderWidthButton.Size = new System.Drawing.Size(45, 23);
             this.borderWidthButton.TabIndex = 29;
             this.borderWidthButton.Text = "Add";
             this.borderWidthButton.UseVisualStyleBackColor = true;
@@ -444,25 +471,25 @@ namespace WindowsApplication1
             // 
             this.borderWidthComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.borderWidthComboBox.FormattingEnabled = true;
-            this.borderWidthComboBox.Location = new System.Drawing.Point(43, 31);
+            this.borderWidthComboBox.Location = new System.Drawing.Point(43, 34);
             this.borderWidthComboBox.Name = "borderWidthComboBox";
-            this.borderWidthComboBox.Size = new System.Drawing.Size(50, 20);
+            this.borderWidthComboBox.Size = new System.Drawing.Size(50, 21);
             this.borderWidthComboBox.TabIndex = 28;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 34);
+            this.label3.Location = new System.Drawing.Point(6, 37);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 12);
+            this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Width";
             // 
             // borderColorButton
             // 
-            this.borderColorButton.Location = new System.Drawing.Point(43, 10);
+            this.borderColorButton.Location = new System.Drawing.Point(43, 11);
             this.borderColorButton.Name = "borderColorButton";
-            this.borderColorButton.Size = new System.Drawing.Size(75, 21);
+            this.borderColorButton.Size = new System.Drawing.Size(75, 23);
             this.borderColorButton.TabIndex = 1;
             this.borderColorButton.Text = "Change";
             this.borderColorButton.UseVisualStyleBackColor = true;
@@ -471,9 +498,9 @@ namespace WindowsApplication1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 15);
+            this.label2.Location = new System.Drawing.Point(6, 16);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Color";
             // 
@@ -482,7 +509,7 @@ namespace WindowsApplication1
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(281, 380);
+            this.label4.Location = new System.Drawing.Point(281, 412);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(244, 13);
             this.label4.TabIndex = 28;
@@ -496,18 +523,18 @@ namespace WindowsApplication1
             this.groupBox4.Controls.Add(this.radioButton2);
             this.groupBox4.Controls.Add(this.radioButton1);
             this.groupBox4.Controls.Add(this.radioButton0);
-            this.groupBox4.Location = new System.Drawing.Point(284, 424);
+            this.groupBox4.Location = new System.Drawing.Point(284, 459);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(334, 119);
+            this.groupBox4.Size = new System.Drawing.Size(334, 129);
             this.groupBox4.TabIndex = 29;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Mouse Mode";
             // 
             // clearSelButton
             // 
-            this.clearSelButton.Location = new System.Drawing.Point(214, 75);
+            this.clearSelButton.Location = new System.Drawing.Point(214, 81);
             this.clearSelButton.Name = "clearSelButton";
-            this.clearSelButton.Size = new System.Drawing.Size(109, 21);
+            this.clearSelButton.Size = new System.Drawing.Size(109, 23);
             this.clearSelButton.TabIndex = 5;
             this.clearSelButton.Text = "Clear Selection";
             this.clearSelButton.UseVisualStyleBackColor = true;
@@ -516,9 +543,9 @@ namespace WindowsApplication1
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(6, 99);
+            this.radioButton4.Location = new System.Drawing.Point(6, 107);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(173, 16);
+            this.radioButton4.Size = new System.Drawing.Size(149, 17);
             this.radioButton4.TabIndex = 4;
             this.radioButton4.Text = "(Left mouse Panning Only)";
             this.radioButton4.UseVisualStyleBackColor = true;
@@ -527,9 +554,9 @@ namespace WindowsApplication1
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(6, 78);
+            this.radioButton3.Location = new System.Drawing.Point(6, 85);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 16);
+            this.radioButton3.Size = new System.Drawing.Size(62, 17);
             this.radioButton3.TabIndex = 3;
             this.radioButton3.Text = "Nothing";
             this.radioButton3.UseVisualStyleBackColor = true;
@@ -538,9 +565,9 @@ namespace WindowsApplication1
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(6, 56);
+            this.radioButton2.Location = new System.Drawing.Point(6, 61);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(179, 16);
+            this.radioButton2.Size = new System.Drawing.Size(156, 17);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.Text = "(Right mouse Panning Only)";
             this.radioButton2.UseVisualStyleBackColor = true;
@@ -549,9 +576,9 @@ namespace WindowsApplication1
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 35);
+            this.radioButton1.Location = new System.Drawing.Point(6, 38);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(215, 16);
+            this.radioButton1.Size = new System.Drawing.Size(181, 17);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.Text = "(Selection Rectangle + Panning) ";
             this.radioButton1.UseVisualStyleBackColor = true;
@@ -562,7 +589,7 @@ namespace WindowsApplication1
             this.radioButton0.AutoSize = true;
             this.radioButton0.Checked = true;
             this.radioButton0.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton0.Location = new System.Drawing.Point(6, 14);
+            this.radioButton0.Location = new System.Drawing.Point(6, 15);
             this.radioButton0.Name = "radioButton0";
             this.radioButton0.Size = new System.Drawing.Size(317, 17);
             this.radioButton0.TabIndex = 0;
@@ -573,15 +600,19 @@ namespace WindowsApplication1
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(281, 392);
+            this.label5.Location = new System.Drawing.Point(281, 425);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(337, 29);
+            this.label5.Size = new System.Drawing.Size(337, 31);
             this.label5.TabIndex = 30;
             this.label5.Text = "After Drawn selection Rectangle and hold down shfit key then click left mouse but" +
                 "ton you can move the rectangle";
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.cboexporttype);
+            this.groupBox5.Controls.Add(this.button4);
+            this.groupBox5.Controls.Add(this.txtfilename);
             this.groupBox5.Controls.Add(this.chksavemultipage);
             this.groupBox5.Controls.Add(this.goButton);
             this.groupBox5.Controls.Add(this.totalPageLabel);
@@ -592,30 +623,67 @@ namespace WindowsApplication1
             this.groupBox5.Controls.Add(this.firstButton);
             this.groupBox5.Controls.Add(this.prevButton);
             this.groupBox5.Controls.Add(this.nextButton);
-            this.groupBox5.Location = new System.Drawing.Point(284, 548);
+            this.groupBox5.Location = new System.Drawing.Point(284, 594);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(334, 81);
+            this.groupBox5.Size = new System.Drawing.Size(363, 130);
             this.groupBox5.TabIndex = 31;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Multi Page Demo";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(184, 93);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(64, 13);
+            this.label19.TabIndex = 42;
+            this.label19.Text = "Export Type";
+            // 
+            // cboexporttype
+            // 
+            this.cboexporttype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboexporttype.FormattingEnabled = true;
+            this.cboexporttype.Location = new System.Drawing.Point(260, 93);
+            this.cboexporttype.Margin = new System.Windows.Forms.Padding(2);
+            this.cboexporttype.Name = "cboexporttype";
+            this.cboexporttype.Size = new System.Drawing.Size(92, 21);
+            this.cboexporttype.TabIndex = 41;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(16, 90);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(161, 23);
+            this.button4.TabIndex = 40;
+            this.button4.Text = "Export Text/XML/HTML ";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // txtfilename
+            // 
+            this.txtfilename.Location = new System.Drawing.Point(142, 35);
+            this.txtfilename.Name = "txtfilename";
+            this.txtfilename.Size = new System.Drawing.Size(210, 20);
+            this.txtfilename.TabIndex = 39;
             // 
             // chksavemultipage
             // 
             this.chksavemultipage.AutoSize = true;
             this.chksavemultipage.Checked = true;
             this.chksavemultipage.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chksavemultipage.Location = new System.Drawing.Point(16, 17);
+            this.chksavemultipage.Location = new System.Drawing.Point(16, 18);
             this.chksavemultipage.Name = "chksavemultipage";
-            this.chksavemultipage.Size = new System.Drawing.Size(282, 16);
+            this.chksavemultipage.Size = new System.Drawing.Size(249, 17);
             this.chksavemultipage.TabIndex = 38;
             this.chksavemultipage.Text = "Save MultiPage when call Save or SaveBySize";
             this.chksavemultipage.UseVisualStyleBackColor = true;
             // 
             // goButton
             // 
-            this.goButton.Location = new System.Drawing.Point(220, 57);
+            this.goButton.Location = new System.Drawing.Point(220, 62);
             this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(29, 21);
+            this.goButton.Size = new System.Drawing.Size(29, 23);
             this.goButton.TabIndex = 37;
             this.goButton.Text = "Go";
             this.goButton.UseVisualStyleBackColor = true;
@@ -624,34 +692,34 @@ namespace WindowsApplication1
             // totalPageLabel
             // 
             this.totalPageLabel.AutoSize = true;
-            this.totalPageLabel.Location = new System.Drawing.Point(251, 61);
+            this.totalPageLabel.Location = new System.Drawing.Point(251, 66);
             this.totalPageLabel.Name = "totalPageLabel";
-            this.totalPageLabel.Size = new System.Drawing.Size(65, 12);
+            this.totalPageLabel.Size = new System.Drawing.Size(59, 13);
             this.totalPageLabel.TabIndex = 36;
             this.totalPageLabel.Text = "Total Page";
             // 
             // pageNoTextBox
             // 
-            this.pageNoTextBox.Location = new System.Drawing.Point(189, 59);
+            this.pageNoTextBox.Location = new System.Drawing.Point(189, 64);
             this.pageNoTextBox.Name = "pageNoTextBox";
-            this.pageNoTextBox.Size = new System.Drawing.Size(28, 21);
+            this.pageNoTextBox.Size = new System.Drawing.Size(28, 20);
             this.pageNoTextBox.TabIndex = 35;
             this.pageNoTextBox.Text = "1";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(131, 60);
+            this.label6.Location = new System.Drawing.Point(131, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(53, 12);
+            this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 34;
             this.label6.Text = "Page No.";
             // 
             // lastButton
             // 
-            this.lastButton.Location = new System.Drawing.Point(96, 56);
+            this.lastButton.Location = new System.Drawing.Point(96, 61);
             this.lastButton.Name = "lastButton";
-            this.lastButton.Size = new System.Drawing.Size(32, 21);
+            this.lastButton.Size = new System.Drawing.Size(32, 23);
             this.lastButton.TabIndex = 33;
             this.lastButton.Text = "->|";
             this.lastButton.UseVisualStyleBackColor = true;
@@ -659,9 +727,9 @@ namespace WindowsApplication1
             // 
             // multiPageButton
             // 
-            this.multiPageButton.Location = new System.Drawing.Point(6, 34);
+            this.multiPageButton.Location = new System.Drawing.Point(6, 37);
             this.multiPageButton.Name = "multiPageButton";
-            this.multiPageButton.Size = new System.Drawing.Size(129, 21);
+            this.multiPageButton.Size = new System.Drawing.Size(129, 23);
             this.multiPageButton.TabIndex = 2;
             this.multiPageButton.Text = "Load Multi Page ";
             this.multiPageButton.UseVisualStyleBackColor = true;
@@ -669,9 +737,9 @@ namespace WindowsApplication1
             // 
             // firstButton
             // 
-            this.firstButton.Location = new System.Drawing.Point(6, 56);
+            this.firstButton.Location = new System.Drawing.Point(6, 61);
             this.firstButton.Name = "firstButton";
-            this.firstButton.Size = new System.Drawing.Size(32, 21);
+            this.firstButton.Size = new System.Drawing.Size(32, 23);
             this.firstButton.TabIndex = 32;
             this.firstButton.Text = "|<-";
             this.firstButton.UseVisualStyleBackColor = true;
@@ -680,9 +748,9 @@ namespace WindowsApplication1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(624, 50);
+            this.label7.Location = new System.Drawing.Point(624, 54);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(125, 12);
+            this.label7.Size = new System.Drawing.Size(113, 13);
             this.label7.TabIndex = 32;
             this.label7.Text = "Save as Image Format";
             // 
@@ -690,50 +758,50 @@ namespace WindowsApplication1
             // 
             this.outputImageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.outputImageComboBox.FormattingEnabled = true;
-            this.outputImageComboBox.Location = new System.Drawing.Point(624, 65);
+            this.outputImageComboBox.Location = new System.Drawing.Point(624, 70);
             this.outputImageComboBox.Name = "outputImageComboBox";
-            this.outputImageComboBox.Size = new System.Drawing.Size(147, 20);
+            this.outputImageComboBox.Size = new System.Drawing.Size(147, 21);
             this.outputImageComboBox.TabIndex = 33;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(624, 92);
+            this.label8.Location = new System.Drawing.Point(624, 100);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 12);
+            this.label8.Size = new System.Drawing.Size(25, 13);
             this.label8.TabIndex = 34;
             this.label8.Text = "DPI";
             // 
             // dpiXTextBox
             // 
-            this.dpiXTextBox.Location = new System.Drawing.Point(655, 90);
+            this.dpiXTextBox.Location = new System.Drawing.Point(655, 98);
             this.dpiXTextBox.Name = "dpiXTextBox";
-            this.dpiXTextBox.Size = new System.Drawing.Size(34, 21);
+            this.dpiXTextBox.Size = new System.Drawing.Size(34, 20);
             this.dpiXTextBox.TabIndex = 35;
             this.dpiXTextBox.Text = "96";
             // 
             // dpiYTextBox
             // 
-            this.dpiYTextBox.Location = new System.Drawing.Point(715, 90);
+            this.dpiYTextBox.Location = new System.Drawing.Point(715, 98);
             this.dpiYTextBox.Name = "dpiYTextBox";
-            this.dpiYTextBox.Size = new System.Drawing.Size(34, 21);
+            this.dpiYTextBox.Size = new System.Drawing.Size(34, 20);
             this.dpiYTextBox.TabIndex = 37;
             this.dpiYTextBox.Text = "96";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(695, 92);
+            this.label9.Location = new System.Drawing.Point(695, 100);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(11, 12);
+            this.label9.Size = new System.Drawing.Size(14, 13);
             this.label9.TabIndex = 36;
             this.label9.Text = "X";
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(624, 114);
+            this.saveButton.Location = new System.Drawing.Point(624, 124);
             this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(75, 21);
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 38;
             this.saveButton.Text = "Save";
             this.saveButton.UseVisualStyleBackColor = true;
@@ -742,9 +810,9 @@ namespace WindowsApplication1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(624, 138);
+            this.label10.Location = new System.Drawing.Point(624, 150);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(185, 12);
+            this.label10.Size = new System.Drawing.Size(147, 13);
             this.label10.TabIndex = 39;
             this.label10.Text = "ico file should 16x16 or 32x32";
             // 
@@ -755,51 +823,51 @@ namespace WindowsApplication1
             this.groupBox6.Controls.Add(this.widthTextBox);
             this.groupBox6.Controls.Add(this.label12);
             this.groupBox6.Controls.Add(this.saveBySizeButton);
-            this.groupBox6.Location = new System.Drawing.Point(624, 152);
+            this.groupBox6.Location = new System.Drawing.Point(624, 165);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(147, 66);
+            this.groupBox6.Size = new System.Drawing.Size(147, 72);
             this.groupBox6.TabIndex = 40;
             this.groupBox6.TabStop = false;
             // 
             // heightTextBox
             // 
-            this.heightTextBox.Location = new System.Drawing.Point(99, 38);
+            this.heightTextBox.Location = new System.Drawing.Point(99, 41);
             this.heightTextBox.Name = "heightTextBox";
-            this.heightTextBox.Size = new System.Drawing.Size(34, 21);
+            this.heightTextBox.Size = new System.Drawing.Size(34, 20);
             this.heightTextBox.TabIndex = 43;
             this.heightTextBox.Text = "240";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(79, 41);
+            this.label11.Location = new System.Drawing.Point(79, 44);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(11, 12);
+            this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 42;
             this.label11.Text = "X";
             // 
             // widthTextBox
             // 
-            this.widthTextBox.Location = new System.Drawing.Point(39, 38);
+            this.widthTextBox.Location = new System.Drawing.Point(39, 41);
             this.widthTextBox.Name = "widthTextBox";
-            this.widthTextBox.Size = new System.Drawing.Size(34, 21);
+            this.widthTextBox.Size = new System.Drawing.Size(34, 20);
             this.widthTextBox.TabIndex = 41;
             this.widthTextBox.Text = "320";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 41);
+            this.label12.Location = new System.Drawing.Point(6, 44);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(29, 12);
+            this.label12.Size = new System.Drawing.Size(27, 13);
             this.label12.TabIndex = 40;
             this.label12.Text = "Size";
             // 
             // saveBySizeButton
             // 
-            this.saveBySizeButton.Location = new System.Drawing.Point(6, 11);
+            this.saveBySizeButton.Location = new System.Drawing.Point(6, 12);
             this.saveBySizeButton.Name = "saveBySizeButton";
-            this.saveBySizeButton.Size = new System.Drawing.Size(107, 21);
+            this.saveBySizeButton.Size = new System.Drawing.Size(107, 23);
             this.saveBySizeButton.TabIndex = 39;
             this.saveBySizeButton.Text = "Save By Size";
             this.saveBySizeButton.UseVisualStyleBackColor = true;
@@ -813,17 +881,17 @@ namespace WindowsApplication1
             this.groupBox7.Controls.Add(this.thumbWidthTextBox);
             this.groupBox7.Controls.Add(this.label14);
             this.groupBox7.Controls.Add(this.thumbButton);
-            this.groupBox7.Location = new System.Drawing.Point(624, 223);
+            this.groupBox7.Location = new System.Drawing.Point(624, 242);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(147, 92);
+            this.groupBox7.Size = new System.Drawing.Size(147, 100);
             this.groupBox7.TabIndex = 41;
             this.groupBox7.TabStop = false;
             // 
             // thumbBackColorButton
             // 
-            this.thumbBackColorButton.Location = new System.Drawing.Point(6, 62);
+            this.thumbBackColorButton.Location = new System.Drawing.Point(6, 67);
             this.thumbBackColorButton.Name = "thumbBackColorButton";
-            this.thumbBackColorButton.Size = new System.Drawing.Size(75, 21);
+            this.thumbBackColorButton.Size = new System.Drawing.Size(75, 23);
             this.thumbBackColorButton.TabIndex = 44;
             this.thumbBackColorButton.Text = "Back Color";
             this.thumbBackColorButton.UseVisualStyleBackColor = true;
@@ -831,43 +899,43 @@ namespace WindowsApplication1
             // 
             // thumbHeightTextBox
             // 
-            this.thumbHeightTextBox.Location = new System.Drawing.Point(99, 38);
+            this.thumbHeightTextBox.Location = new System.Drawing.Point(99, 41);
             this.thumbHeightTextBox.Name = "thumbHeightTextBox";
-            this.thumbHeightTextBox.Size = new System.Drawing.Size(34, 21);
+            this.thumbHeightTextBox.Size = new System.Drawing.Size(34, 20);
             this.thumbHeightTextBox.TabIndex = 43;
             this.thumbHeightTextBox.Text = "120";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(79, 41);
+            this.label13.Location = new System.Drawing.Point(79, 44);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(11, 12);
+            this.label13.Size = new System.Drawing.Size(14, 13);
             this.label13.TabIndex = 42;
             this.label13.Text = "X";
             // 
             // thumbWidthTextBox
             // 
-            this.thumbWidthTextBox.Location = new System.Drawing.Point(39, 38);
+            this.thumbWidthTextBox.Location = new System.Drawing.Point(39, 41);
             this.thumbWidthTextBox.Name = "thumbWidthTextBox";
-            this.thumbWidthTextBox.Size = new System.Drawing.Size(34, 21);
+            this.thumbWidthTextBox.Size = new System.Drawing.Size(34, 20);
             this.thumbWidthTextBox.TabIndex = 41;
             this.thumbWidthTextBox.Text = "160";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 41);
+            this.label14.Location = new System.Drawing.Point(6, 44);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(29, 12);
+            this.label14.Size = new System.Drawing.Size(27, 13);
             this.label14.TabIndex = 40;
             this.label14.Text = "Size";
             // 
             // thumbButton
             // 
-            this.thumbButton.Location = new System.Drawing.Point(6, 11);
+            this.thumbButton.Location = new System.Drawing.Point(6, 12);
             this.thumbButton.Name = "thumbButton";
-            this.thumbButton.Size = new System.Drawing.Size(107, 21);
+            this.thumbButton.Size = new System.Drawing.Size(107, 23);
             this.thumbButton.TabIndex = 39;
             this.thumbButton.Text = "Make Thumbnail";
             this.thumbButton.UseVisualStyleBackColor = true;
@@ -878,17 +946,17 @@ namespace WindowsApplication1
             this.groupBox8.Controls.Add(this.cropHBitmapButton);
             this.groupBox8.Controls.Add(this.cropClipboardButton);
             this.groupBox8.Controls.Add(this.cropImageFileButton);
-            this.groupBox8.Location = new System.Drawing.Point(624, 321);
+            this.groupBox8.Location = new System.Drawing.Point(813, 351);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(147, 92);
+            this.groupBox8.Size = new System.Drawing.Size(123, 100);
             this.groupBox8.TabIndex = 42;
             this.groupBox8.TabStop = false;
             // 
             // cropHBitmapButton
             // 
-            this.cropHBitmapButton.Location = new System.Drawing.Point(6, 65);
+            this.cropHBitmapButton.Location = new System.Drawing.Point(6, 70);
             this.cropHBitmapButton.Name = "cropHBitmapButton";
-            this.cropHBitmapButton.Size = new System.Drawing.Size(135, 21);
+            this.cropHBitmapButton.Size = new System.Drawing.Size(107, 23);
             this.cropHBitmapButton.TabIndex = 2;
             this.cropHBitmapButton.Text = "Crop to HBITMAP";
             this.cropHBitmapButton.UseVisualStyleBackColor = true;
@@ -896,9 +964,9 @@ namespace WindowsApplication1
             // 
             // cropClipboardButton
             // 
-            this.cropClipboardButton.Location = new System.Drawing.Point(6, 38);
+            this.cropClipboardButton.Location = new System.Drawing.Point(6, 41);
             this.cropClipboardButton.Name = "cropClipboardButton";
-            this.cropClipboardButton.Size = new System.Drawing.Size(135, 21);
+            this.cropClipboardButton.Size = new System.Drawing.Size(107, 23);
             this.cropClipboardButton.TabIndex = 1;
             this.cropClipboardButton.Text = "Crop to Clipboard";
             this.cropClipboardButton.UseVisualStyleBackColor = true;
@@ -906,9 +974,9 @@ namespace WindowsApplication1
             // 
             // cropImageFileButton
             // 
-            this.cropImageFileButton.Location = new System.Drawing.Point(6, 11);
+            this.cropImageFileButton.Location = new System.Drawing.Point(6, 12);
             this.cropImageFileButton.Name = "cropImageFileButton";
-            this.cropImageFileButton.Size = new System.Drawing.Size(135, 21);
+            this.cropImageFileButton.Size = new System.Drawing.Size(107, 23);
             this.cropImageFileButton.TabIndex = 0;
             this.cropImageFileButton.Text = "Crop to Image File";
             this.cropImageFileButton.UseVisualStyleBackColor = true;
@@ -923,17 +991,17 @@ namespace WindowsApplication1
             this.groupBox9.Controls.Add(this.saveClipboardButton);
             this.groupBox9.Controls.Add(this.printButton);
             this.groupBox9.Controls.Add(this.backColorButton);
-            this.groupBox9.Location = new System.Drawing.Point(777, 65);
+            this.groupBox9.Location = new System.Drawing.Point(777, 70);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(159, 226);
+            this.groupBox9.Size = new System.Drawing.Size(159, 245);
             this.groupBox9.TabIndex = 43;
             this.groupBox9.TabStop = false;
             // 
             // savePictureBoxButton
             // 
-            this.savePictureBoxButton.Location = new System.Drawing.Point(6, 195);
+            this.savePictureBoxButton.Location = new System.Drawing.Point(6, 211);
             this.savePictureBoxButton.Name = "savePictureBoxButton";
-            this.savePictureBoxButton.Size = new System.Drawing.Size(135, 21);
+            this.savePictureBoxButton.Size = new System.Drawing.Size(135, 23);
             this.savePictureBoxButton.TabIndex = 8;
             this.savePictureBoxButton.Text = "Save to Picturebox";
             this.savePictureBoxButton.UseVisualStyleBackColor = true;
@@ -941,9 +1009,9 @@ namespace WindowsApplication1
             // 
             // saveHBitmapButton
             // 
-            this.saveHBitmapButton.Location = new System.Drawing.Point(6, 168);
+            this.saveHBitmapButton.Location = new System.Drawing.Point(6, 182);
             this.saveHBitmapButton.Name = "saveHBitmapButton";
-            this.saveHBitmapButton.Size = new System.Drawing.Size(135, 21);
+            this.saveHBitmapButton.Size = new System.Drawing.Size(135, 23);
             this.saveHBitmapButton.TabIndex = 7;
             this.saveHBitmapButton.Text = "Save to HBITMAP";
             this.saveHBitmapButton.UseVisualStyleBackColor = true;
@@ -951,9 +1019,9 @@ namespace WindowsApplication1
             // 
             // importPictureBoxButton
             // 
-            this.importPictureBoxButton.Location = new System.Drawing.Point(6, 141);
+            this.importPictureBoxButton.Location = new System.Drawing.Point(6, 153);
             this.importPictureBoxButton.Name = "importPictureBoxButton";
-            this.importPictureBoxButton.Size = new System.Drawing.Size(135, 21);
+            this.importPictureBoxButton.Size = new System.Drawing.Size(135, 23);
             this.importPictureBoxButton.TabIndex = 6;
             this.importPictureBoxButton.Text = "Import From PictureBox";
             this.importPictureBoxButton.UseVisualStyleBackColor = true;
@@ -961,9 +1029,9 @@ namespace WindowsApplication1
             // 
             // pasteClipboardButton
             // 
-            this.pasteClipboardButton.Location = new System.Drawing.Point(6, 114);
+            this.pasteClipboardButton.Location = new System.Drawing.Point(6, 124);
             this.pasteClipboardButton.Name = "pasteClipboardButton";
-            this.pasteClipboardButton.Size = new System.Drawing.Size(135, 21);
+            this.pasteClipboardButton.Size = new System.Drawing.Size(135, 23);
             this.pasteClipboardButton.TabIndex = 5;
             this.pasteClipboardButton.Text = "Paste From Clipboard";
             this.pasteClipboardButton.UseVisualStyleBackColor = true;
@@ -971,9 +1039,9 @@ namespace WindowsApplication1
             // 
             // saveClipboardButton
             // 
-            this.saveClipboardButton.Location = new System.Drawing.Point(6, 88);
+            this.saveClipboardButton.Location = new System.Drawing.Point(6, 95);
             this.saveClipboardButton.Name = "saveClipboardButton";
-            this.saveClipboardButton.Size = new System.Drawing.Size(135, 21);
+            this.saveClipboardButton.Size = new System.Drawing.Size(135, 23);
             this.saveClipboardButton.TabIndex = 4;
             this.saveClipboardButton.Text = "Save to Clipboard";
             this.saveClipboardButton.UseVisualStyleBackColor = true;
@@ -981,9 +1049,9 @@ namespace WindowsApplication1
             // 
             // printButton
             // 
-            this.printButton.Location = new System.Drawing.Point(6, 40);
+            this.printButton.Location = new System.Drawing.Point(6, 43);
             this.printButton.Name = "printButton";
-            this.printButton.Size = new System.Drawing.Size(135, 21);
+            this.printButton.Size = new System.Drawing.Size(135, 23);
             this.printButton.TabIndex = 2;
             this.printButton.Text = "Print Image";
             this.printButton.UseVisualStyleBackColor = true;
@@ -991,9 +1059,9 @@ namespace WindowsApplication1
             // 
             // backColorButton
             // 
-            this.backColorButton.Location = new System.Drawing.Point(6, 13);
+            this.backColorButton.Location = new System.Drawing.Point(6, 14);
             this.backColorButton.Name = "backColorButton";
-            this.backColorButton.Size = new System.Drawing.Size(135, 21);
+            this.backColorButton.Size = new System.Drawing.Size(135, 23);
             this.backColorButton.TabIndex = 1;
             this.backColorButton.Text = "Background Color";
             this.backColorButton.UseVisualStyleBackColor = true;
@@ -1002,18 +1070,18 @@ namespace WindowsApplication1
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(777, 298);
+            this.label15.Location = new System.Drawing.Point(810, 329);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(71, 12);
+            this.label15.Size = new System.Drawing.Size(61, 13);
             this.label15.TabIndex = 44;
             this.label15.Text = "Picture Box";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(780, 324);
+            this.pictureBox1.Location = new System.Drawing.Point(878, 328);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(159, 120);
+            this.pictureBox1.Size = new System.Drawing.Size(56, 20);
             this.pictureBox1.TabIndex = 45;
             this.pictureBox1.TabStop = false;
             // 
@@ -1025,18 +1093,19 @@ namespace WindowsApplication1
             this.groupBox10.Controls.Add(this.groupBox11);
             this.groupBox10.Controls.Add(this.rotLeftRadioButton);
             this.groupBox10.Controls.Add(this.rotRightRadioButton);
-            this.groupBox10.Location = new System.Drawing.Point(624, 416);
+            this.groupBox10.Location = new System.Drawing.Point(653, 546);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(312, 103);
+            this.groupBox10.Size = new System.Drawing.Size(328, 71);
             this.groupBox10.TabIndex = 46;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Advance Rotate";
             // 
             // flipHButton
             // 
-            this.flipHButton.Location = new System.Drawing.Point(87, 67);
+            this.flipHButton.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flipHButton.Location = new System.Drawing.Point(250, 34);
             this.flipHButton.Name = "flipHButton";
-            this.flipHButton.Size = new System.Drawing.Size(95, 21);
+            this.flipHButton.Size = new System.Drawing.Size(72, 18);
             this.flipHButton.TabIndex = 8;
             this.flipHButton.Text = "Flip Horizontal";
             this.flipHButton.UseVisualStyleBackColor = true;
@@ -1044,9 +1113,10 @@ namespace WindowsApplication1
             // 
             // flipVButton
             // 
-            this.flipVButton.Location = new System.Drawing.Point(6, 67);
+            this.flipVButton.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.flipVButton.Location = new System.Drawing.Point(251, 11);
             this.flipVButton.Name = "flipVButton";
-            this.flipVButton.Size = new System.Drawing.Size(75, 21);
+            this.flipVButton.Size = new System.Drawing.Size(71, 19);
             this.flipVButton.TabIndex = 7;
             this.flipVButton.Text = "Flip Vertical";
             this.flipVButton.UseVisualStyleBackColor = true;
@@ -1054,9 +1124,10 @@ namespace WindowsApplication1
             // 
             // advRotateButton
             // 
-            this.advRotateButton.Location = new System.Drawing.Point(202, 67);
+            this.advRotateButton.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.advRotateButton.Location = new System.Drawing.Point(253, 55);
             this.advRotateButton.Name = "advRotateButton";
-            this.advRotateButton.Size = new System.Drawing.Size(75, 21);
+            this.advRotateButton.Size = new System.Drawing.Size(69, 17);
             this.advRotateButton.TabIndex = 6;
             this.advRotateButton.Text = "OK";
             this.advRotateButton.UseVisualStyleBackColor = true;
@@ -1067,9 +1138,9 @@ namespace WindowsApplication1
             this.groupBox11.Controls.Add(this.radioButton90);
             this.groupBox11.Controls.Add(this.radioButton270);
             this.groupBox11.Controls.Add(this.radioButton180);
-            this.groupBox11.Location = new System.Drawing.Point(99, 13);
+            this.groupBox11.Location = new System.Drawing.Point(99, 14);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(195, 51);
+            this.groupBox11.Size = new System.Drawing.Size(152, 55);
             this.groupBox11.TabIndex = 5;
             this.groupBox11.TabStop = false;
             // 
@@ -1077,9 +1148,9 @@ namespace WindowsApplication1
             // 
             this.radioButton90.AutoSize = true;
             this.radioButton90.Checked = true;
-            this.radioButton90.Location = new System.Drawing.Point(6, 18);
+            this.radioButton90.Location = new System.Drawing.Point(6, 20);
             this.radioButton90.Name = "radioButton90";
-            this.radioButton90.Size = new System.Drawing.Size(35, 16);
+            this.radioButton90.Size = new System.Drawing.Size(37, 17);
             this.radioButton90.TabIndex = 2;
             this.radioButton90.TabStop = true;
             this.radioButton90.Text = "90";
@@ -1088,9 +1159,9 @@ namespace WindowsApplication1
             // radioButton270
             // 
             this.radioButton270.AutoSize = true;
-            this.radioButton270.Location = new System.Drawing.Point(103, 18);
+            this.radioButton270.Location = new System.Drawing.Point(103, 20);
             this.radioButton270.Name = "radioButton270";
-            this.radioButton270.Size = new System.Drawing.Size(41, 16);
+            this.radioButton270.Size = new System.Drawing.Size(43, 17);
             this.radioButton270.TabIndex = 4;
             this.radioButton270.Text = "270";
             this.radioButton270.UseVisualStyleBackColor = true;
@@ -1098,9 +1169,9 @@ namespace WindowsApplication1
             // radioButton180
             // 
             this.radioButton180.AutoSize = true;
-            this.radioButton180.Location = new System.Drawing.Point(54, 18);
+            this.radioButton180.Location = new System.Drawing.Point(54, 20);
             this.radioButton180.Name = "radioButton180";
-            this.radioButton180.Size = new System.Drawing.Size(41, 16);
+            this.radioButton180.Size = new System.Drawing.Size(43, 17);
             this.radioButton180.TabIndex = 3;
             this.radioButton180.Text = "180";
             this.radioButton180.UseVisualStyleBackColor = true;
@@ -1108,9 +1179,9 @@ namespace WindowsApplication1
             // rotLeftRadioButton
             // 
             this.rotLeftRadioButton.AutoSize = true;
-            this.rotLeftRadioButton.Location = new System.Drawing.Point(8, 42);
+            this.rotLeftRadioButton.Location = new System.Drawing.Point(8, 46);
             this.rotLeftRadioButton.Name = "rotLeftRadioButton";
-            this.rotLeftRadioButton.Size = new System.Drawing.Size(89, 16);
+            this.rotLeftRadioButton.Size = new System.Drawing.Size(78, 17);
             this.rotLeftRadioButton.TabIndex = 1;
             this.rotLeftRadioButton.Text = "Rotate Left";
             this.rotLeftRadioButton.UseVisualStyleBackColor = true;
@@ -1119,9 +1190,9 @@ namespace WindowsApplication1
             // 
             this.rotRightRadioButton.AutoSize = true;
             this.rotRightRadioButton.Checked = true;
-            this.rotRightRadioButton.Location = new System.Drawing.Point(8, 20);
+            this.rotRightRadioButton.Location = new System.Drawing.Point(8, 22);
             this.rotRightRadioButton.Name = "rotRightRadioButton";
-            this.rotRightRadioButton.Size = new System.Drawing.Size(95, 16);
+            this.rotRightRadioButton.Size = new System.Drawing.Size(85, 17);
             this.rotRightRadioButton.TabIndex = 0;
             this.rotRightRadioButton.TabStop = true;
             this.rotRightRadioButton.Text = "Rotate Right";
@@ -1130,26 +1201,26 @@ namespace WindowsApplication1
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(627, 526);
+            this.label16.Location = new System.Drawing.Point(653, 620);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(23, 12);
+            this.label16.Size = new System.Drawing.Size(29, 13);
             this.label16.TabIndex = 47;
             this.label16.Text = "URL";
             // 
             // urlTextBox
             // 
             this.urlTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
-            this.urlTextBox.Location = new System.Drawing.Point(624, 541);
+            this.urlTextBox.Location = new System.Drawing.Point(655, 636);
             this.urlTextBox.Name = "urlTextBox";
-            this.urlTextBox.Size = new System.Drawing.Size(312, 21);
+            this.urlTextBox.Size = new System.Drawing.Size(229, 20);
             this.urlTextBox.TabIndex = 48;
             this.urlTextBox.Text = "http://www.viscomsoft.com/images/imageviewerpro1.gif";
             // 
             // urlButton
             // 
-            this.urlButton.Location = new System.Drawing.Point(836, 565);
+            this.urlButton.Location = new System.Drawing.Point(890, 634);
             this.urlButton.Name = "urlButton";
-            this.urlButton.Size = new System.Drawing.Size(100, 21);
+            this.urlButton.Size = new System.Drawing.Size(80, 23);
             this.urlButton.TabIndex = 49;
             this.urlButton.Text = "Load from url";
             this.urlButton.UseVisualStyleBackColor = true;
@@ -1158,19 +1229,20 @@ namespace WindowsApplication1
             // axImageViewer1
             // 
             this.axImageViewer1.Enabled = true;
-            this.axImageViewer1.Location = new System.Drawing.Point(125, 28);
+            this.axImageViewer1.Location = new System.Drawing.Point(125, 29);
             this.axImageViewer1.Name = "axImageViewer1";
             this.axImageViewer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axImageViewer1.OcxState")));
-            this.axImageViewer1.Size = new System.Drawing.Size(475, 335);
+            this.axImageViewer1.Size = new System.Drawing.Size(469, 366);
             this.axImageViewer1.TabIndex = 50;
             this.axImageViewer1.SelectionRectDrawn += new AxSCRIBBLELib._DImageViewerEvents_SelectionRectDrawnEventHandler(this.axImageViewer1_SelectionRectDrawn_1);
+            this.axImageViewer1.OnMouseWheel += new AxSCRIBBLELib._DImageViewerEvents_OnMouseWheelEventHandler(this.axImageViewer1_OnMouseWheel);
             // 
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(619, 8);
+            this.label17.Location = new System.Drawing.Point(619, 9);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(251, 12);
+            this.label17.Size = new System.Drawing.Size(175, 13);
             this.label17.TabIndex = 51;
             this.label17.Text = "Bpp , it will affect the output file size";
             // 
@@ -1178,16 +1250,16 @@ namespace WindowsApplication1
             // 
             this.cbopixelformat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbopixelformat.FormattingEnabled = true;
-            this.cbopixelformat.Location = new System.Drawing.Point(618, 28);
+            this.cbopixelformat.Location = new System.Drawing.Point(618, 30);
             this.cbopixelformat.Name = "cbopixelformat";
-            this.cbopixelformat.Size = new System.Drawing.Size(163, 20);
+            this.cbopixelformat.Size = new System.Drawing.Size(163, 21);
             this.cbopixelformat.TabIndex = 52;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(787, 30);
+            this.button1.Location = new System.Drawing.Point(787, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(81, 19);
+            this.button1.Size = new System.Drawing.Size(81, 21);
             this.button1.TabIndex = 53;
             this.button1.Text = "Change";
             this.button1.UseVisualStyleBackColor = true;
@@ -1198,19 +1270,205 @@ namespace WindowsApplication1
             this.chkuseadvpdf.AutoSize = true;
             this.chkuseadvpdf.Checked = true;
             this.chkuseadvpdf.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkuseadvpdf.Location = new System.Drawing.Point(6, 7);
+            this.chkuseadvpdf.Location = new System.Drawing.Point(6, 8);
             this.chkuseadvpdf.Name = "chkuseadvpdf";
-            this.chkuseadvpdf.Size = new System.Drawing.Size(162, 16);
+            this.chkuseadvpdf.Size = new System.Drawing.Size(156, 17);
             this.chkuseadvpdf.TabIndex = 54;
             this.chkuseadvpdf.Text = "Use Advanced PDF Viewer";
             this.chkuseadvpdf.UseVisualStyleBackColor = true;
             this.chkuseadvpdf.CheckedChanged += new System.EventHandler(this.chkuseadvpdf_CheckedChanged);
             // 
+            // radioChangePage3
+            // 
+            this.radioChangePage3.AutoSize = true;
+            this.radioChangePage3.Location = new System.Drawing.Point(11, 81);
+            this.radioChangePage3.Name = "radioChangePage3";
+            this.radioChangePage3.Size = new System.Drawing.Size(232, 17);
+            this.radioChangePage3.TabIndex = 2;
+            this.radioChangePage3.Text = "Right mouse button + scrolling mouse wheel";
+            this.radioChangePage3.UseVisualStyleBackColor = true;
+            this.radioChangePage3.CheckedChanged += new System.EventHandler(this.radioChangePage3_CheckedChanged);
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.radioChangePage3);
+            this.groupBox12.Controls.Add(this.radioChangePage2);
+            this.groupBox12.Controls.Add(this.radioChangePage1);
+            this.groupBox12.Location = new System.Drawing.Point(-3, 612);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(282, 103);
+            this.groupBox12.TabIndex = 63;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "change pages by scrolling mouse wheel ";
+            // 
+            // radioChangePage2
+            // 
+            this.radioChangePage2.AutoSize = true;
+            this.radioChangePage2.Checked = true;
+            this.radioChangePage2.Location = new System.Drawing.Point(12, 52);
+            this.radioChangePage2.Name = "radioChangePage2";
+            this.radioChangePage2.Size = new System.Drawing.Size(179, 17);
+            this.radioChangePage2.TabIndex = 1;
+            this.radioChangePage2.TabStop = true;
+            this.radioChangePage2.Text = " Ctrl Key + scrolling mouse wheel";
+            this.radioChangePage2.UseVisualStyleBackColor = true;
+            this.radioChangePage2.CheckedChanged += new System.EventHandler(this.radioChangePage2_CheckedChanged);
+            // 
+            // radioChangePage1
+            // 
+            this.radioChangePage1.AutoSize = true;
+            this.radioChangePage1.Location = new System.Drawing.Point(12, 22);
+            this.radioChangePage1.Name = "radioChangePage1";
+            this.radioChangePage1.Size = new System.Drawing.Size(130, 17);
+            this.radioChangePage1.TabIndex = 0;
+            this.radioChangePage1.Text = "Scrolling mouse wheel";
+            this.radioChangePage1.UseVisualStyleBackColor = true;
+            this.radioChangePage1.CheckedChanged += new System.EventHandler(this.radioChangePage1_CheckedChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(15, 64);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(104, 23);
+            this.button2.TabIndex = 64;
+            this.button2.Text = "DeSkew";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(9, 89);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(74, 12);
+            this.label18.TabIndex = 65;
+            this.label18.Text = "Deskew Angle is";
+            // 
+            // lbldeskewangle
+            // 
+            this.lbldeskewangle.AutoSize = true;
+            this.lbldeskewangle.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldeskewangle.Location = new System.Drawing.Point(93, 90);
+            this.lbldeskewangle.Name = "lbldeskewangle";
+            this.lbldeskewangle.Size = new System.Drawing.Size(10, 12);
+            this.lbldeskewangle.TabIndex = 66;
+            this.lbldeskewangle.Text = "0";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(12, 114);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 23);
+            this.button3.TabIndex = 67;
+            this.button3.Text = "Boder Remove";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.cboencryptmode);
+            this.groupBox13.Controls.Add(this.label21);
+            this.groupBox13.Controls.Add(this.btnSavePDFKeepQualityPermission);
+            this.groupBox13.Controls.Add(this.txtsavepassword);
+            this.groupBox13.Controls.Add(this.label20);
+            this.groupBox13.Controls.Add(this.btnSavePDFKeepQualityPassword);
+            this.groupBox13.Controls.Add(this.chkfastwebview);
+            this.groupBox13.Controls.Add(this.btnSavePDFKeepQuality);
+            this.groupBox13.Location = new System.Drawing.Point(623, 351);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(187, 193);
+            this.groupBox13.TabIndex = 68;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = " Keep high Quality, Without losing Quality";
+            // 
+            // cboencryptmode
+            // 
+            this.cboencryptmode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboencryptmode.FormattingEnabled = true;
+            this.cboencryptmode.Location = new System.Drawing.Point(99, 131);
+            this.cboencryptmode.Name = "cboencryptmode";
+            this.cboencryptmode.Size = new System.Drawing.Size(81, 21);
+            this.cboencryptmode.TabIndex = 7;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Arial", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(16, 134);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(63, 12);
+            this.label21.TabIndex = 6;
+            this.label21.Text = "Encrypt Mode";
+            // 
+            // btnSavePDFKeepQualityPermission
+            // 
+            this.btnSavePDFKeepQualityPermission.Location = new System.Drawing.Point(10, 156);
+            this.btnSavePDFKeepQualityPermission.Name = "btnSavePDFKeepQualityPermission";
+            this.btnSavePDFKeepQualityPermission.Size = new System.Drawing.Size(171, 28);
+            this.btnSavePDFKeepQualityPermission.TabIndex = 5;
+            this.btnSavePDFKeepQualityPermission.Text = "Save PDF with Permissions";
+            this.btnSavePDFKeepQualityPermission.UseVisualStyleBackColor = true;
+            this.btnSavePDFKeepQualityPermission.Click += new System.EventHandler(this.btnSavePDFKeepQualityPermission_Click);
+            // 
+            // txtsavepassword
+            // 
+            this.txtsavepassword.Location = new System.Drawing.Point(76, 98);
+            this.txtsavepassword.Name = "txtsavepassword";
+            this.txtsavepassword.Size = new System.Drawing.Size(58, 20);
+            this.txtsavepassword.TabIndex = 4;
+            this.txtsavepassword.Text = "123";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(16, 101);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(52, 13);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "password";
+            // 
+            // btnSavePDFKeepQualityPassword
+            // 
+            this.btnSavePDFKeepQualityPassword.Location = new System.Drawing.Point(10, 65);
+            this.btnSavePDFKeepQualityPassword.Name = "btnSavePDFKeepQualityPassword";
+            this.btnSavePDFKeepQualityPassword.Size = new System.Drawing.Size(170, 28);
+            this.btnSavePDFKeepQualityPassword.TabIndex = 2;
+            this.btnSavePDFKeepQualityPassword.Text = "Save PDF with password";
+            this.btnSavePDFKeepQualityPassword.UseVisualStyleBackColor = true;
+            this.btnSavePDFKeepQualityPassword.Click += new System.EventHandler(this.btnSavePDFKeepQualityPassword_Click);
+            // 
+            // chkfastwebview
+            // 
+            this.chkfastwebview.AutoSize = true;
+            this.chkfastwebview.Location = new System.Drawing.Point(89, 36);
+            this.chkfastwebview.Name = "chkfastwebview";
+            this.chkfastwebview.Size = new System.Drawing.Size(91, 17);
+            this.chkfastwebview.TabIndex = 1;
+            this.chkfastwebview.Text = "fast web view";
+            this.chkfastwebview.UseVisualStyleBackColor = true;
+            // 
+            // btnSavePDFKeepQuality
+            // 
+            this.btnSavePDFKeepQuality.Location = new System.Drawing.Point(11, 32);
+            this.btnSavePDFKeepQuality.Name = "btnSavePDFKeepQuality";
+            this.btnSavePDFKeepQuality.Size = new System.Drawing.Size(70, 28);
+            this.btnSavePDFKeepQuality.TabIndex = 0;
+            this.btnSavePDFKeepQuality.Text = "Save PDF";
+            this.btnSavePDFKeepQuality.UseVisualStyleBackColor = true;
+            this.btnSavePDFKeepQuality.Click += new System.EventHandler(this.btnSavePDFKeepQuality_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(974, 705);
+            this.ClientSize = new System.Drawing.Size(1019, 677);
+            this.Controls.Add(this.groupBox13);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.lbldeskewangle);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.chkuseadvpdf);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbopixelformat);
@@ -1284,6 +1542,10 @@ namespace WindowsApplication1
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.axImageViewer1)).EndInit();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1396,6 +1658,28 @@ namespace WindowsApplication1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox chkuseadvpdf;
         internal System.Windows.Forms.CheckBox chksavemultipage;
+        private System.Windows.Forms.RadioButton radioChangePage3;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.RadioButton radioChangePage2;
+        private System.Windows.Forms.RadioButton radioChangePage1;
+        private System.Windows.Forms.TextBox txtfilename;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbldeskewangle;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.ComboBox cboexporttype;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Button btnSavePDFKeepQualityPassword;
+        private System.Windows.Forms.CheckBox chkfastwebview;
+        private System.Windows.Forms.Button btnSavePDFKeepQuality;
+        private System.Windows.Forms.Button btnSavePDFKeepQualityPermission;
+        private System.Windows.Forms.TextBox txtsavepassword;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.ComboBox cboencryptmode;
+        private System.Windows.Forms.Label label21;
     }
 }
 
