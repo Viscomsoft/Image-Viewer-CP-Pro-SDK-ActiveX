@@ -15,22 +15,24 @@ Install Viscomsoft Image Viewer CP Pro SDK from https://www.viscomsoft.com/produ
  
 4. Read 1D and 2D barcodes in images. Supported UPC-A, UPC-E, EAN-8, EAN-13, Code 39, Code 93, Code 128, ITF, Codabar, MSI, RSS-14 (all variants), QR Code, Data Matrix, Aztec and PDF-417. Automatic barcode type detection, Read multiple barcodes at any orientation. High-speed barcode recognition and return sureness value of each detected barcode. (need add-ons Barcode Reader Module)
 
-5. Optical Character Recognition - OCR PDF, BMP, GIF, ICO, JPEG, JPEG 2000, PCX, PNG, PSD, TIF, WMF, WBMP, TGA, PGX, RAS, PNM to memory text or text file. (need add-ons OCR Module )
+5. add Stamps on PDF at specific page, select pre-made 15 Stamp Icon e.g. "Approved" or "Draft" Stamp Icon, color, size, stamp text.
 
-6. Add, Delete the TIFF image to specific position of existing TIFF File without displaying or decoding any of the images. (Very Fast)
+6. Optical Character Recognition - OCR PDF, BMP, GIF, ICO, JPEG, JPEG 2000, PCX, PNG, PSD, TIF, WMF, WBMP, TGA, PGX, RAS, PNM to memory text or text file. (need add-ons OCR Module )
 
-7. Support write QR Barcode to image files or HBITMAP, custom define background, foreground color, version number, error level and border size. (need add-ons Barcode Writer Module)
+7. Add, Delete the TIFF image to specific position of existing TIFF File without displaying or decoding any of the images. (Very Fast)
 
-8. Support reads a specified frame in a multi-framed DICOM image. (need add-ons DICOM Module )
+8. Support write QR Barcode to image files or HBITMAP, custom define background, foreground color, version number, error level and border size. (need add-ons Barcode Writer Module)
 
-9. Support create Microsoft Word (.docx) File and add images and texts to specific page.
+9. Support reads a specified frame in a multi-framed DICOM image. (need add-ons DICOM Module )
 
-10. Support Print event, you will know how many pages printed and when is finished.
+10. Support create Microsoft Word (.docx) File and add images and texts to specific page.
 
-11. Support deskew, it can automatic skew detection and correction in loaded images.
+11. Support Print event, you will know how many pages printed and when is finished.
 
-12. Include C#2019, C#2010, VB.NET 2019, VB.Net 2010, Visual Basic, Visual Basic Script (vbs), Visual C , Visual Foxpro, Delphi, Access, Web Page Sample Code.
+12. Support deskew, it can automatic skew detection and correction in loaded images.
 
-13. Compatible with any programming language that supports ActiveX (Access, Visual C , Visual Basic , Visual Foxpro, Delphi, .Net, etc.) 
+13. Include C#2019, C#2010, VB.NET 2019, VB.Net 2010, Visual Basic, Visual Basic Script (vbs), Visual C , Visual Foxpro, Delphi, Access, Web Page Sample Code.
 
-14. Royalty free distribution of the OCX file.
+14. Compatible with any programming language that supports ActiveX (Access, Visual C , Visual Basic , Visual Foxpro, Delphi, .Net, etc.) 
+
+15. Royalty free distribution of the OCX file.
